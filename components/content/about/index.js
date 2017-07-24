@@ -4,6 +4,7 @@ import moment from 'moment'
 import AboutContentEducation from './education'
 import AboutContentCareer from './career'
 import Separator from './separator'
+import Marker from './utils/marker'
 
 const AboutContent = () => (
   <div>
@@ -11,6 +12,8 @@ const AboutContent = () => (
       <div className="hero-body">
         <div className="container">
           <h1 className="title is-1">Philippe Gibert</h1>
+          <Marker city="Bain de Bretagne, Ille-et-Vilaine, France"/>
+
         </div>
       </div>
     </section>
