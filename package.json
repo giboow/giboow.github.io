@@ -20,7 +20,7 @@
     "bulma": "^0.4.3",
     "classnames": "^2.2.5",
     "moment": "^2.18.1",
-    "next": "^3.0.1-beta.8",
+    "next": "^3.0.1-beta.18",
     "nprogress": "^0.2.0",
     "prop-types": "^15.5.10",
     "re-bulma": "^0.4.5",
