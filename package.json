@@ -8,6 +8,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next build && next export",
+    "postexport": "touch ./out/.nojekyll",
     "start": "next start",
     "predeploy": "npm run export",
     "deploy": "./scripts/deploy.sh",
