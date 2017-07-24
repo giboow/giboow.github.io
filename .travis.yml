@@ -1,19 +1,20 @@
 language: node_js
 node_js:
-- '5'
-- '4'
+  - '6'
+  - '5'
+
 deploy:
   skip_cleanup: true
   provider: script
   script: "./scripts/deploy.sh"
   on:
     branch: src
-    node: '5'
+    node: '6'
 before_install:
-- NPM_VERSION=$(npm --version)
-- if [ "${NPM_VERSION:0:2}" = "2." ]; then npm i -g npm@latest; fi
-- npm set progress=false
-- npm prune
+  - NPM_VERSION=$(npm --version)
+  - if [ "${NPM_VERSION:0:2}" = "2." ]; then npm i -g npm@latest; fi
+  - npm set progress=false
+  - npm prune
 env:
   global:
   - secure: LAsptlFGnuwsq9vDxLtdKQAwec6ckIB6tzO2RwbcStJubmvMq21zHHRD3o/2xplynwjw0FKR67vUULgdcGAtFvz/skiQBSPwZK1H1eZBxv0+QPbds5nrgZD9XJDFTHNbaBmTlOzKHPq/5cw6L4G4hbUFBqqjKyzok78BVSdYeu8aCg7Bkn5OMHvWTNdEJnDveUKSMRWRVBdY8SpA62EZyrKIgc5vwllz1EcwlcKKCPSvKCBgTYm/jpVnJ+Hx5oes7DDu/58tsYZRxD5iSi309n0WyLAvJDF/H9w5I7uq7NXwuK4LVo/JBJMnxK7b8wLsGTaQqmXNlpUxEeB849ZaXSvqE1Uj8DqWQOJQDP8buGp+WafMSOiFZ1wRBY7LzMW2l/zf/lZ0rI3UOzojUBHDI3Eyf30xRre6JGlaB6Acz9LRpX4BF+hHt9Kf+S7GLSWNi9Cnh8+wa3/if2F6bmxqCfdS8k06bH1x3G8bWh5zmmWZMaDrw8qnZx4pEJekj6Ru3TMcLX9Kn/Jy+O+UrpjDBwnN1JoAev3egly6VNEx2vC/SVAofsM6HA6xhA3FSVNJxeN9x/EZgC59vcErEygcosrqAIR6W1Uj0/GG8pHxARtNAbWVeqvq5xAJmXj/dBRD526t7+x5ev5Aahj2clrncvhGNI4sSY8sfTtmtbzphRM=

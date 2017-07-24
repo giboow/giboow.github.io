@@ -8,7 +8,7 @@ then
   git config --global user.email "travis@travis-ci.org"
 fi
 
-cd dist && \
+cd out && \
 $(npm bin)/rimraf .git
 git init && \
 git add . && \
