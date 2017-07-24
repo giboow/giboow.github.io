@@ -10,7 +10,8 @@
     "export": "next build && next export",
     "start": "next start",
     "predeploy": "npm run export",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "test": "npm run export"
   },
   "author": "",
   "license": "ISC",
