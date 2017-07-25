@@ -3,7 +3,7 @@ import moment from 'moment'
 
 import AboutContentEducation from './education'
 import AboutContentCareer from './career'
-import Separator from './separator'
+import Separator from './utils/separator'
 import Marker from './utils/marker'
 
 const AboutContent = () => (
