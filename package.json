@@ -5,10 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/giboow/giboow.github.io",
   "scripts": {
-    "dev": "next",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "predeploy": "npm run export",
     "deploy": "./scripts/deploy.sh",
     "test": "npm run export"
@@ -20,6 +21,7 @@
     "classnames": "^2.2.5",
     "moment": "^2.18.1",
     "next": "^3.0.1-beta.18",
+    "next-routes": "^1.0.40",
     "nprogress": "^0.2.0",
     "prop-types": "^15.5.10",
     "re-bulma": "^0.4.5",
