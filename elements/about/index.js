@@ -1,8 +1,9 @@
 import React from 'react'
 import moment from 'moment'
 
-import AboutContentEducation from './education'
-import AboutContentCareer from './career'
+import Education from './education'
+import Career from './career'
+import Skills from './skills'
 import Separator from './utils/separator'
 import Marker from './utils/marker'
 
@@ -50,12 +51,18 @@ const AboutContent = () => (
         </div>
       </div>
     </section>
-    <section className="section" style={{backgroundColor: "grey"}}>
+    <section className="section" style={{backgroundColor: "lightgrey"}}>
       <div className="container">
         <Separator title="Experiences"/>
-        <AboutContentEducation/>
+        <Education/>
         <Separator/>
-        <AboutContentCareer/>
+        <Career/>
+      </div>
+    </section>
+    <section className="section">
+      <div className="container">
+        <Separator title="Compétences"/>
+        <Skills/>
       </div>
     </section>
   </div>
