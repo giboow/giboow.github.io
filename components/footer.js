@@ -8,7 +8,7 @@ export default class Footer extends Component {
       <footer className="footer">
         <div className="container">
           <div className="columns is-vcentered">
-            <div className="column is-4">
+            <div className="column is-offset-1-desktop is-4 is-6-mobile">
               <div className="content is-large">
                 <div className="columns is-mobile">
                   <div className="column">
@@ -42,7 +42,7 @@ export default class Footer extends Component {
                 </div>
               </div>
             </div>
-            <div className="column is-offset-4 is-4">
+            <div className="column is-offset-4-desktop is-4-desktop">
               <div className="content is-small">
                 &copy; {moment().format('YYYY')} -
                 Made with ♥ By <Link><a href="https://twitter.com/giboow">Giboow</a></Link>
