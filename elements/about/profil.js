@@ -26,7 +26,7 @@ export default () => (
                 </div>
                 <div className="column is-2 is-offset-1 has-text-centered">
                     <figure className="image is-1by1" >
-                        <img src="/static/images/giboow-portrait.jpg" style={{borderRadius:"100px"}}/>
+                        <img src="/static/images/giboow-portrait.jpg" style={{borderRadius:"1000px"}}/>
                     </figure>
                 </div>
                 <div className="column is-3 is-offset-1 has-text-left">
