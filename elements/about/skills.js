@@ -13,21 +13,31 @@ export default () => {
         {'name' : 'MySQL', 'score': 4.5},
         {'name' : 'MongoDB', 'score': 4},
         {'name' : 'Redis', 'score': 4.5},
-        {'name' : 'BASH', 'score': 4},
+        {'name' : 'Bash/Scripts', 'score': 4},
         {'name' : 'Docker', 'score': 4},
         {'name' : 'GIT', 'score': 4},
         {'name' : 'Jenkins', 'score': 4},
     ];
 
+    const chunkSize = Math.ceil(skills.length / 4);
+    const groupSkills = [];
+    while (skills.length > 0) {
+        groupSkills.push(skills.splice(0, chunkSize));
+    }
     return (
-        <div>
-            <ul>
-                {skills.map((item, key) => (
-                    <li key={key}>
-                        {item.name} <ScoreStar score={item.score}/>
-                    </li>
-                ))}
-            </ul>
+        <div className="columns is-mobile is-multiline">
+            {groupSkills.map((skills, key) => (
+                <div key={key} className="column has-text-centered is-6-mobile">
+                    <ul>
+                        {skills.map((item, key) => (
+                            <li key={key}>
+                                {item.name} <ScoreStar score={item.score}/>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+
         </div>
     )
 }
