@@ -3,7 +3,6 @@ import classNames from 'classnames'
 
 export default ({score}) => {
     const starsIndex = Array.from(Array(5).keys()).map(item => item+1);
-    console.log(starsIndex);
     return (
         <div>
             {starsIndex.map((item, key) => {
@@ -12,7 +11,7 @@ export default ({score}) => {
                     'fa',
                     {
                         'fa-star-o': starScore <= 0,
-                        'fa-star-half-empty': starScore < 1,
+                        'fa-star-half-empty': starScore > 0 && starScore < 1,
                         'fa-star': starScore => 1
                     }
                 );
