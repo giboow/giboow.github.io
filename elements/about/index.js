@@ -11,7 +11,7 @@ import Separator from './utils/separator'
 const AboutContent = () => (
   <div>
     <Hero/>
-    <Profil />
+    <Profil/>
     <section className="section" style={{backgroundColor: "lightgrey"}}>
       <div className="container">
         <Separator title="Experiences"/>
