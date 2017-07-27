@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import PropTypes from 'prop-types'
+import GoogleAnalytics from './google-analytics'
 
 import Header from './header'
 import Footer from './footer'
@@ -32,6 +33,7 @@ class Layout extends Component {
                 <Header {...headerProps} />
                 {children}
                 <Footer />
+                <GoogleAnalytics/>
             </div>
         )
     }
