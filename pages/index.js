@@ -1,13 +1,19 @@
-import React from 'react'
-import Layout from '../components/layout'
-import AboutContent from '../elements/about'
+import {Component} from "react"
 
-import moment from 'moment'
+import redirect from "next-redirect"
 
-export const IndexPage = () => (
-    <Layout navActive="home">
-        <AboutContent />
-    </Layout>
-)
+
+class IndexPage extends Component{
+
+    componentDidMount() {
+        const {context} = this;
+        redirect(context, "/about")
+    }
+
+    render() {
+      return null;
+    }
+}
 
 export default IndexPage
+

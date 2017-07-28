@@ -12,6 +12,8 @@ import Router from 'next-routes'
 import 'moment';
 import 'moment/locale/fr'
 
+import Head from "next/head"
+
 
 class Layout extends Component {
 
@@ -44,7 +46,7 @@ class Layout extends Component {
     }
 
     render() {
-        const {navActive, children} = this.props
+        const {navActive, children, title, subtitle} = this.props
 
         const headerProps = {
             navigation: {activeItem: navActive}
@@ -53,6 +55,9 @@ class Layout extends Component {
         return (
             <div>
                 <NProgess/>
+                <Head>
+                    <title>{title ? title : "Giboow"}{subtitle?" - "+subtitle:null}</title>
+                </Head>
                 <Header {...headerProps} />
                 {children}
                 <Footer />

@@ -3,7 +3,7 @@ module.exports = {
         return {
             "/": { page: "/" },
             "/blog/test": { page: "/blog" , query : {slug : "test"}},
-        //    "/about": { page: "/about" },
+            "/about": { page: "/about" },
         }
     },
 };
