@@ -10,10 +10,10 @@ const debug = process.env.NODE_ENV !== 'production';
  */
 let instance = null
 
-export default  class GA {
+export default class GA {
 
     constructor() {
-        if(!instance){
+        if (!instance) {
             instance = this;
         }
         this.initGA();
@@ -23,14 +23,14 @@ export default  class GA {
 
     initGA() {
         let gaOptions = null;
-        if(debug) {
+        if (debug) {
             //gaOptions = {cookieDomain : 'none'};
+            ReactGA.initialize('UA-103397810-1', {debug, gaOptions})
         }
-        ReactGA.initialize('UA-103397810-1', {debug, gaOptions})
     }
 
     logPageView() {
-        ReactGA.set({ page: window.location.pathname })
+        ReactGA.set({page: window.location.pathname})
         ReactGA.pageview(window.location.pathname)
     }
 
@@ -40,7 +40,7 @@ export default  class GA {
         }
     }
 
-    logException (description = '', fatal = false) {
+    logException(description = '', fatal = false) {
         if (description) {
             ReactGA.exception({description, fatal})
         }
