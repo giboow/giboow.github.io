@@ -17,7 +17,7 @@ export default () => (
                     <h3 className="title is-3">A propos de moi </h3>
                     <div className="content">
                         <p>
-                            Développeur Web passionné depuis plus de 10 ans, j'ai une bonne connaissance des techniques back-end et front-end.
+                            Développeur Web depuis plus de 10 ans, j'ai une bonne connaissance des techniques back-end et front-end.
                             J'aime faire une veille constante sur l'ecosysteme web et découvrir de nouvelles technologies.
                             Passionné d'internet, de jeux de sociétés et de tout ce qui tourne autour de l'univers geek et high tech, je vous fais partager mes passions
                             à travers mon blog.
