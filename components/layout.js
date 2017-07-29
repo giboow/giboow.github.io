@@ -17,53 +17,56 @@ import Head from "next/head"
 
 class Layout extends Component {
 
-    static defaultProps = {
-        navActive : null,
+  static defaultProps = {
+    navActive: null,
+  }
+
+  static propTypes = {
+    navActive: PropTypes.string, // navigation config
+  }
+
+  /**
+   *
+   * @type {Analytics}
+   */
+  analytics = null;
+
+
+  componentDidMount() {
+    this.analytics = new Analytics();
+    this.analytics.logPageView()
+
+
+    Router.onRouteChangeComplete = () => this.analytics.logPageView()
+  }
+
+  componentWillUnmount() {
+
+    Router.onRouteChangeComplete = null
+  }
+
+  render() {
+    const {navActive, children, title} = this.props
+
+    const headerProps = {
+      navigation: {activeItem: navActive}
     }
 
-    static propTypes = {
-        navActive: PropTypes.string, // navigation config
-    }
+    const mainTitle = "Giboow, Philippe Gibert, Développeur Web" +
+      " FullStack, Rennes, Bretagne "
 
-    /**
-     *
-     * @type {Analytics}
-     */
-    analytics = null;
-
-
-    componentDidMount () {
-        this.analytics = new Analytics();
-        this.analytics.logPageView()
-
-
-        Router.onRouteChangeComplete = () => this.analytics.logPageView()
-    }
-
-    componentWillUnmount () {
-
-        Router.onRouteChangeComplete = null
-    }
-
-    render() {
-        const {navActive, children, title, subtitle} = this.props
-
-        const headerProps = {
-            navigation: {activeItem: navActive}
-        }
-
-        return (
-            <div>
-                <NProgess/>
-                <Head>
-                    <title>{title ? title : "Giboow"}{subtitle?" - "+subtitle:null}</title>
-                </Head>
-                <Header {...headerProps} />
-                {children}
-                <Footer />
-            </div>
-        )
-    }
+    return (
+      <div>
+        <NProgess/>
+        <Head>
+          <title>{mainTitle}{title ? " - " + title : null}</title>
+        </Head>
+        <Header {...headerProps} />
+        {children}
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default Layout

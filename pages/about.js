@@ -8,12 +8,16 @@ const keywords = [
     'Développeur',
     'FullStack',
     'Web',
+    'Rennes',
     'PHP',
-    'Rennes'
+    'CSS3',
+    'Frontend',
+    'Backend',
+    'Github'
 ]
 
 export const IndexPage = () => (
-    <Layout navActive="about" subtitle="Developpeur FullStack Web">
+    <Layout navActive="about" subtitle="Curriculum Vitae">
         <Head>
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />
