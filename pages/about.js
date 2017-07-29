@@ -13,7 +13,7 @@ const keywords = [
 ]
 
 export const IndexPage = () => (
-    <Layout navActive="about" subtitle="Developpeur FullStack Web - CV">
+    <Layout navActive="about" subtitle="Developpeur FullStack Web">
         <Head>
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />
