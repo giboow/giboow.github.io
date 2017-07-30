@@ -10,7 +10,7 @@ const PORT = process.env.PORT ? process.env.PORT : 3000
 app.prepare()
   .then(() => {
     createServer(handler)
-      .listen(3000, (err) => {
+      .listen(PORT, (err) => {
         if (err) throw err
         console.log('> Ready on http://localhost:' + PORT)
       })
