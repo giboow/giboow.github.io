@@ -12,24 +12,20 @@ export default class Footer extends Component {
               <div className="content is-large">
                 <div className="columns is-mobile">
                   <div className="column">
-                    <a href="https://twitter.com/giboow">
-                      <a title="Twitter" className="icon">
-                        <i className="fa fa-twitter"></i>
-                      </a>
+                    <a title="Twitter" className="icon" href="https://twitter.com/giboow">
+                      <i className="fa fa-twitter"></i>
                     </a>
                   </div>
                   <div className="column">
-                    <a href="https://www.linkedin.com/in/pgibert/">
-                      <a title="LinkedIn" className="icon">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
+                    <a title="LinkedIn" className="icon"
+                       href="https://www.linkedin.com/in/pgibert/">
+                      <i className="fa fa-linkedin"></i>
                     </a>
                   </div>
                   <div className="column">
-                    <a target="_blank" href="https://github.com/giboow/">
-                      <a title="Github" className="icon">
-                        <i className="fa fa-github"></i>
-                      </a>
+                    <a title="Github" className="icon" target="_blank"
+                       href="https://github.com/giboow/">
+                      <i className="fa fa-github"></i>
                     </a>
                   </div>
                   <div className="column">
