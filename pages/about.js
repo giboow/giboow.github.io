@@ -22,7 +22,6 @@ export const IndexPage = () => (
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />
             )}
-
         </Head>
         <AboutContent />
     </Layout>
