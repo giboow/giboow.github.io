@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - '6'
-  - '5'
+  - '14'
+  - '12'
 
 deploy:
   skip_cleanup: true
@@ -9,7 +9,7 @@ deploy:
   script: "./scripts/deploy.sh"
   on:
     branch: src
-    node: '6'
+    node: '14'
 before_install:
   - NPM_VERSION=$(npm --version)
   - if [ "${NPM_VERSION:0:2}" = "2." ]; then npm i -g npm@latest; fi
