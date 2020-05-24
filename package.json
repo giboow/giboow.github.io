@@ -8,7 +8,7 @@
     "test": "npm run export",
     "dev": "node server.js",
     "build": "next build",
-    "export": "next build && next export && echo 'giboow.fr' > ./out/CNAME",
+    "export": "next build && echo 'giboow.fr' > ./out/CNAME",
     "prestart": "npm run build",
     "start": "NODE_ENV=production node server.js",
     "predeploy": "npm run export",
