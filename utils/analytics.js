@@ -2,7 +2,7 @@ import React from 'react'
 import ReactGA from 'react-ga'
 
 
-const debug = process.env.NODE_ENV !== 'production';
+const debug = process.env.NODE_ENV === 'development';
 
 /**
  * Instance for singleton
@@ -12,38 +12,44 @@ let instance = null
 
 export default class GA {
 
-    constructor() {
-        if (!instance) {
-            instance = this;
-        }
-        this.initGA();
-
-        return instance;
+  constructor() {
+    if (!instance) {
+      instance = this;
     }
+    this.initGA();
 
-    initGA() {
-        let gaOptions = null;
-        if (debug) {
-            //gaOptions = {cookieDomain : 'none'};
-            ReactGA.initialize('UA-103397810-1', {debug, gaOptions})
-        }
-    }
+    return instance;
+  }
 
-    logPageView() {
-        ReactGA.set({page: window.location.pathname})
-        ReactGA.pageview(window.location.pathname)
+  initGA() {
+    let gaOptions = null;
+    if (!debug) {
+      //gaOptions = {cookieDomain : 'none'};
+      ReactGA.initialize('UA-103397810-1', {debug, gaOptions})
     }
+  }
 
-    logEvent(category = '', action = '') {
-        if (category && action) {
-            ReactGA.event({category, action})
-        }
+  logPageView() {
+    if (!debug) {
+      ReactGA.set({page: window.location.pathname})
+      ReactGA.pageview(window.location.pathname)
     }
+  }
 
-    logException(description = '', fatal = false) {
-        if (description) {
-            ReactGA.exception({description, fatal})
-        }
+  logEvent(category = '', action = '') {
+    if (!debug) {
+      if (category && action) {
+        ReactGA.event({category, action})
+      }
     }
+  }
+
+  logException(description = '', fatal = false) {
+    if (!debug) {
+      if (description) {
+        ReactGA.exception({description, fatal})
+      }
+    }
+  }
 }
 
