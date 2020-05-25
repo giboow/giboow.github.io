@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto"
               rel="stylesheet"/>
+        <link rel="shortcut icon" href="/static/images/icons/favicon.ico" />
 
         <meta name="title" content="Site personnel de Philippe Gibert"/>
         <meta name="description" content="Développeur Web depuis plus de 10 ans, j'ai une bonne connaissance des techniques back-end et front-end.
