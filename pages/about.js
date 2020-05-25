@@ -16,16 +16,15 @@ const keywords = [
     'Github'
 ]
 
-export const IndexPage = () => (
+export const AboutPage = () => (
     <Layout navActive="about" subtitle="Curriculum Vitae">
         <Head>
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />
             )}
-
         </Head>
         <AboutContent />
     </Layout>
 )
 
-export default IndexPage
+export default AboutPage

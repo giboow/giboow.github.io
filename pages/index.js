@@ -1,19 +1,13 @@
 import {Component} from "react"
 
 import redirect from "next-redirect"
+import AboutPage from "./about";
 
 
-class IndexPage extends Component{
+export const IndexPage = () => (
+      <AboutPage />
+);
 
-    componentDidMount() {
-        const {context} = this;
-        redirect(context, "/about")
-    }
+export default IndexPage;
 
-    render() {
-      return null;
-    }
-}
-
-export default IndexPage
 

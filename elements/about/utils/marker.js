@@ -9,7 +9,7 @@ export default class Marker extends Component {
         return (
             <span>
                 <i className="fa fa-map-marker"></i> {city}
-                {link && (<span>&nbsp;|&nbsp;<Link href={link}><a>{link}</a></Link></span>)}
+                {link && (<span>&nbsp;|&nbsp;<a href={link}>{link}</a></span>)}
             </span>
         )
     }

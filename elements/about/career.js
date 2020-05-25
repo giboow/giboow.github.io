@@ -21,11 +21,12 @@ export default () => (
                             Développement Backend/Frontend de la plateforme Wizdeo, outil
                             d’analyse d’audience sur Youtube
                             (
-                            <strong>CakePHP</strong>,&nbsp;
-                            <strong>MySQL</strong>,&nbsp;
-                            <strong>MongoDB</strong>,&nbsp;
-                            <strong>ElasticSearch</strong>,&nbsp;
-                            <strong>Docker</strong>, <strong>jQuery</strong>
+                            <strong>CakePHP</strong>,
+                            <strong>MySQL</strong>,
+                            <strong>MongoDB</strong>,
+                            <strong>ElasticSearch</strong>,
+                            <strong>Docker</strong>,
+                            <strong>jQuery</strong>
                             )
                         </li>
                         <li>
