@@ -9,7 +9,7 @@ deploy:
   script: "./scripts/deploy.sh"
   on:
     branch: src
-    node: '12'
+    node: '14'
 before_install:
   - NPM_VERSION=$(npm --version)
   - if [ "${NPM_VERSION:0:2}" = "2." ]; then npm i -g npm@latest; fi

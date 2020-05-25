@@ -16,7 +16,7 @@ const keywords = [
     'Github'
 ]
 
-export const IndexPage = () => (
+export const AboutPage = () => (
     <Layout navActive="about" subtitle="Curriculum Vitae">
         <Head>
             {keywords && (
@@ -27,4 +27,4 @@ export const IndexPage = () => (
     </Layout>
 )
 
-export default IndexPage
+export default AboutPage

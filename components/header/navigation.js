@@ -19,8 +19,8 @@ class Navigation extends Component {
   }
 
   navItems = [
-    {id: 'home', name: 'Home', href: '/'},
-    {id: 'about', name: 'CV', href: '/about'},
+   // {id: 'home', name: 'Home', href: '/'},
+   // {id: 'about', name: 'CV', href: '/about'},
   ]
 
 
