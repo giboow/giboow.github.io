@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import AboutContent from "../elements/about"
+import AboutContent from "../components/pages/about"
 import Head from "next/head"
 
 const keywords = [

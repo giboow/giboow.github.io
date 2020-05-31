@@ -5,7 +5,7 @@ import Header from './header'
 import Footer from './footer'
 import NProgess from "./nprogress";
 
-import Analytics from '../utils/analytics'
+import Analytics from '../services/google-analytics'
 import Router from 'next-routes'
 
 

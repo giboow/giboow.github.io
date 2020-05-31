@@ -7,9 +7,8 @@
   "scripts": {
     "test": "npm run export",
     "dev": "NODE_ENV=development node server.js",
-
     "build": "next build",
-    "export": "next build && next export && echo 'giboow.fr' > ./out/CNAME && touch ./out/.nojekyll" ,
+    "export": "next build && next export && echo 'giboow.fr' > ./out/CNAME && touch ./out/.nojekyll",
     "prestart": "npm run build",
     "start": "NODE_ENV=production node server.js",
     "predeploy": "npm run export",
@@ -20,6 +19,8 @@
   "dependencies": {
     "bulma": "^0.8.2",
     "classnames": "^2.2.5",
+    "gray-matter": "^4.0.2",
+    "meta-marked-2020": "^0.5.7",
     "moment": "^2.18.1",
     "next": "^9.4.2",
     "next-redirect": "^1.0.1",

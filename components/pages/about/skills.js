@@ -1,5 +1,5 @@
 import React from 'react'
-import ScoreStar from '../../components/score/star'
+import ScoreStar from '../../score/star'
 
 
 export default () => {

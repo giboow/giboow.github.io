@@ -1,3 +1,4 @@
+
 module.exports = {
   distDir: "_next",
   generateBuildId: async () => {
@@ -7,4 +8,14 @@ module.exports = {
       return `${new Date().getTime()}`;
     }
   },
+  webpack: (config, { isServer }) => {
+    // Fixes npm packages that depend on `fs` module
+    if (!isServer) {
+      config.node = {
+        fs: 'empty'
+      }
+    }
+
+    return config
+  }
 };
