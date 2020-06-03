@@ -23,7 +23,7 @@ export default class Title extends Component {
         <div className="hero-body">
           <div className="container">
             <h1 className="title is-1">{title}</h1>
-            <p className="subtitle is-4">{momentDate.format('LL')}</p>
+            <time datetime={moment.utc(date).format()} className="subtitle is-4">{momentDate.format('LL')}</time>
           </div>
         </div>
       </section>
