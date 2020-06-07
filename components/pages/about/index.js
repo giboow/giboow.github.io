@@ -20,12 +20,7 @@ const AboutContent = () => (
         <Career/>
       </div>
     </section>
-    <section className="section">
-      <div className="container">
-        <Separator title="Compétences"/>
-        <Skills/>
-      </div>
-    </section>
+    <Skills/>
   </div>
 )
 

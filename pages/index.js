@@ -1,7 +1,8 @@
 import Layout from "../components/layout";
 import {getPostData, getSortedPostsData} from '../services/posts';
-import classnames from 'classnames';
-import moment from 'moment';
+import PostItem from '../components/post/list/item';
+
+import Hero from "../components/pages/about/hero"
 
 export async function getStaticProps(context) {
   const posts = await getSortedPostsData();
@@ -21,31 +22,30 @@ export async function getStaticProps(context) {
 
 export default ({edito, posts}) => (
   <Layout>
-    {edito && (
-      <section className="section">
-        <div className="container">
-          <div className="columns is-mobile is-centered">
-            <article className="column is-half edito">
-              <h2 className="title is-2">{edito.title}</h2>
-              <div className="is-primary content"
-                   dangerouslySetInnerHTML={{__html: edito.contentHtml}}></div>
-            </article>
-          </div>
-        </div>
-      </section>
-    )}
+    {/*{edito && (*/}
+    {/*  <section className="section">*/}
+    {/*    <div className="container">*/}
+    {/*      <div className="columns is-mobile is-centered">*/}
+    {/*        <article className="column is-half edito">*/}
+    {/*          <h2 className="title is-2">{edito.title}</h2>*/}
+    {/*          <div className="is-primary content"*/}
+    {/*               dangerouslySetInnerHTML={{__html: edito.contentHtml}}></div>*/}
+    {/*        </article>*/}
+    {/*      </div>*/}
+    {/*    </div>*/}
+    {/*  </section>*/}
+    {/*)}*/}
 
-    <section className="section" style={{backgroundColor: "lightgrey"}}>
+
+    <Hero></Hero>
+
+    <section className="section is-fullheight">
       <div className="container">
-        <div className="columns is-ancestor is-multiline">
-          {posts && posts.length && posts.slice(0, 10).map((post, idx) => (
-            <div
-              className={classnames("column", {"is-12": idx === 0, 'is-one-quarter': idx !== 0})}>
-              <article className="post has-text-centered ">
-                <time
-                  datetime={moment.utc(post.date).format()}>{moment(post.date).format('LL')}</time>
-                <p className="title">{post.title}</p>
-              </article>
+        <h2 className="title is-2">Derniers posts</h2>
+        <div className="columns is-multiline">
+          {posts && posts.length > 0 && posts.map((post, idx) => (
+            <div className="column is-12">
+              <PostItem post={post}/>
             </div>
           ))}
         </div>

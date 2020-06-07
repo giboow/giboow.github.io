@@ -1,5 +1,6 @@
+const withSass = require('@zeit/next-sass')
 
-module.exports = {
+module.exports = withSass({
   distDir: "_next",
   generateBuildId: async () => {
     if (process.env.BUILD_ID) {
@@ -18,4 +19,4 @@ module.exports = {
 
     return config
   }
-};
+});
