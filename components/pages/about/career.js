@@ -10,8 +10,47 @@ export default () => (
         </div>
         <div className="columns">
             <div className="column is-2 is-offset-1-desktop">
+                <strong className="title is-4">Ekolis</strong>
+                <p>Mai 2018 à Aujourd’hui</p>
+            </div>
+            <div className="column is-8">
+                <strong className="title is-4">Développeur FullStack</strong>
+                <div className="content">
+                    <ul>
+                        <li>
+                            Développement Backend/Frontend de la plateforme Ekolis, outil
+                            de suivi de flotte
+                            <ul>
+                                <li>Java</li>
+                                <li>Angular</li>
+                                <li>PostgreSQL</li>
+                                <li>RabbitMQ</li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            Création d'application Android
+                            <ul>
+                                <li>Android Natif Java/Kotlin</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Suivi de projet externalisé
+                        </li>
+                        <li>
+                            Support technique pour les commerciaux, technicien et client
+                        </li>
+                    </ul>
+                </div>
+                <strong>
+                    <Marker city="Rennes" link="http://ekolis-eu.com"/>
+                </strong>
+            </div>
+        </div>
+        <div className="columns">
+            <div className="column is-2 is-offset-1-desktop">
                 <strong className="title is-4">Wizdeo</strong>
-                <p>Octobre 2015 à Aujourd’hui</p>
+                <p>Octobre 2015 à Mai 2018</p>
             </div>
             <div className="column is-8">
                 <strong className="title is-4">Ingénieur R&D</strong>
@@ -20,21 +59,22 @@ export default () => (
                         <li>
                             Développement Backend/Frontend de la plateforme Wizdeo, outil
                             d’analyse d’audience sur Youtube
-                            (
-                            <strong>CakePHP</strong>,
-                            <strong>MySQL</strong>,
-                            <strong>MongoDB</strong>,
-                            <strong>ElasticSearch</strong>,
-                            <strong>Docker</strong>,
-                            <strong>jQuery</strong>
-                            )
+                            <ul>
+                                <li>CakePHP</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>ElasticSearch</li>
+                                <li>Docker</li>
+                                <li>jQuery</li>
+                            </ul>
                         </li>
                         <li>
-                            Création d’applications mobiles IOS/Android (
-                            <strong>Ionic2</strong>,&nbsp;
-                            <strong>TypeScript</strong>,&nbsp;
-                            <strong>Angular2</strong>
-                            )
+                            Création d’applications mobiles IOS/Android
+                            <ul>
+                                <li>Ionic2</li>
+                                <li>TypeScript</li>
+                                <li>Angular2</li>
+                            </ul>
                         </li>
                         <li>
                             Methods Agiles : Scrum
@@ -69,19 +109,20 @@ export default () => (
                         </li>
                         <li>
                             Développement d’API, interface applicative pour les différentes applications Front-end
-                            Android, iOs et Web (
-                            <strong>PHP</strong>,&nbsp;
-                            <strong>Framework Laravel 4 et 5</strong>,&nbsp;
-                            <strong>RabbitMQ</strong>,&nbsp;
-                            <strong>MongoDb</strong>,&nbsp;
-                            <strong>AngularJS</strong>
-                            ).
+                            Android, iOs et Web
+                            <ul>
+                                <li>PHP</li>
+                                <li>Framework Laravel 4 et 5</li>
+                                <li>RabbitMQ</li>
+                                <li>MongoDb</li>
+                                <li>AngularJS</li>
+                            </ul>
                         </li>
                         <li>
-                            Recherche et développement sur des technologies Java (
-                            <strong>Scala</strong>,&nbsp;
-                            <strong>Groovy</strong>
-                            ).
+                            Recherche et développement sur des technologies Java
+                            <li>Scala</li>
+                            <li>Groovy</li>
+
                         </li>
                     </ul>
                 </div>
@@ -102,7 +143,8 @@ export default () => (
                         <li>
                             Mise en place d’une architecture de développement : Configuration apache, installation d’un
                             serveur de
-                            version (<strong>Subversion</strong>) et d’intégration (<strong>Jenkins</strong>, <strong>PHPUnit</strong>).
+                            version (<strong>Subversion</strong>) et d’intégration
+                            (<strong>Jenkins</strong>, <strong>PHPUnit</strong>).
                         </li>
                         <li>
                             Analyse et conception de la nouvelle version de la plateforme publicitaire
@@ -120,7 +162,8 @@ export default () => (
                             Application Temps réel : Consultation des logs multi-servers (<strong>NodeJS</strong>)
                         </li>
                         <li>
-                            Maintenance des différents systèmes de la structure (astreinte 24h/24, une semaine sur trois).
+                            Maintenance des différents systèmes de la structure (astreinte 24h/24, une semaine sur
+                            trois).
                         </li>
                         <li>
                             Télétravail pendant 2 ans
