@@ -13,10 +13,11 @@ Bienvenue à toi, l'ami!
 
 Je m'appelle Philippe, j'ai 35 ans, j'ai une petite famille ainsi qu'un chat et deux poules! 
 Je suis développeur d'application depuis une bonne quinzaine d'année. Le développement et la technologie occupe donc une bonne  
-Je suis développeur d'application depuis une bonne quinzaine d'année. Le développement et la technologie occupe donc une bonne  
 partie de mes journées!
 
 Sur ce blog conçut et réaliser avec ♥, je vais essayer de vous partager mon quotidien (du code, du code, du code!!), 
 mais aussi tout ce que je trouve interessant sur la toile et relatif a mon metier (application, librairies, hardware, news, etc..)! 
 
+Ce site va être aussi pour moi, un bon moyen pour (re)découvrir ReactJs ainsi que NextJs. 
+J'ai en effet eu l'occasion de manipuler ces deux frameworks, mais sans jamais proposer une version disponible publiquement.
 
