@@ -1,0 +1,6 @@
+/*center images*/
+.content img {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}

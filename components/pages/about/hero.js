@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default () => (
-    <section className="hero is-halfheight has-text-centered is-primary">
+const Hero = () => (
+    <section className="hero is-medium has-text-centered is-primary">
         <div className="hero-body">
             <div className="container">
                 <h1 className="title is-1">Philippe Gibert</h1>
@@ -9,4 +9,6 @@ export default () => (
             </div>
         </div>
     </section>
-)
+);
+
+export default Hero;

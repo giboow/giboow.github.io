@@ -6,26 +6,34 @@ import * as classnames from "classnames";
 
 const PostListItem = ({post}) => (
     <article className={classnames(style.post)}>
-
-
-
-        <Link href={"/posts/" + post.id}>
-            <a className="title">{post.title}</a>
-        </Link>
-        <div className="metadata">
-            <div className="image is-24x24 is-pulled-left mr-2">
-                <img src={"https://github.com/" + post.author + ".png?size=28"}
-                     className="is-rounded" alt="author"/>
+        {post.image &&
+        <div className="hero is-secondary hero-background has-background is-blogpost">
+            <img className="hero-background is-transparent" src={post.image}/>
+            <div className="hero-body">
+                <div className="container">
+                    <Link href={"/posts/" + post.id}>
+                        <a className="title">{post.title}</a>
+                    </Link>
+                    <div className="metadata">
+                        <div className="image is-24x24 is-pulled-left mr-2">
+                            <img src={"https://github.com/" + post.author + ".png?size=28"}
+                                 className="is-rounded" alt="author"/>
+                        </div>
+                        <time className="is-left" dateTime={moment.utc(post.date).format()}>
+                            {moment(post.date).format('LL')}
+                        </time>
+                    </div>
+                </div>
             </div>
-            <time className="is-left" dateTime={moment.utc(post.date).format()}>
-                {moment(post.date).format('LL')}
-            </time>
-        </div>
-        <div className="mt-4"
-            dangerouslySetInnerHTML={{
-            __html: post.contentHtml
-        }}/>
+        </div>}
+        {/*<Link href={"/posts/" + post.id}>*/}
+        {/*    <a className="title">{post.title}</a>*/}
+        {/*</Link>*/}
 
+        <div className="content mt-4"
+             dangerouslySetInnerHTML={{
+                 __html: post.contentHtml
+             }}/>
     </article>
 );
 

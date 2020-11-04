@@ -1,4 +1,4 @@
-import Document, {Head, Main, NextScript} from 'next/document'
+import Document, {Html, Head, Main, NextScript} from 'next/document'
 import flush from 'styled-jsx/server'
 
 export default class MyDocument extends Document {
@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <>
+      <Html>
       <Head>
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
       <Main />
       <NextScript />
       </body>
-      </>
+      </Html>
     )
   }
 }

@@ -28,28 +28,17 @@ export default class PostContent extends Component {
   render() {
     return (
       <div>
-        <div className="container main-container">
+        <div className="container main-container mt-1">
           <Breadcrumb {...this.postData} />
         </div>
         <article>
-          <header className="article-header">
+          <header className="article-header mt-1">
             <Title {...this.postData} />
           </header>
           <div className="container">
             <Content {...this.postData} />
           </div>
         </article>
-
-        <style jsx>{`
-      .main-container {
-        margin-top : 16px;
-      }
-      
-      .article-header {
-        margin-top: 16px;
-      }
-    `}</style>
-
       </div>
     )
   }

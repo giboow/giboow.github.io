@@ -1,2 +1,28 @@
 @charset "utf-8";
 @import "../node_modules/bulma/bulma.sass";
+
+
+.hero {
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+
+    &.is-transparent {
+      opacity: 0.3;
+    }
+  }
+
+  &.is-blogpost  {
+    .hero-body {
+      padding: 18rem 1.5rem 1.5rem;
+    }
+
+  }
+}

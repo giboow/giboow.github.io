@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import Navigation from './navigation'
 
+import './index.css';
 
 class Header extends Component {
 
@@ -67,12 +68,6 @@ class Header extends Component {
                       className={classnames('navbar-end', 'navbar-menu', {'is-active': this.state.activeToggleNav})}
           />
         </nav>
-
-        <style jsx>{`
-      .navbar {
-        box-shadow: 0 2px 0 0 #f5f5f5;
-      }
-    `}</style>
       </div>
     )
   }
