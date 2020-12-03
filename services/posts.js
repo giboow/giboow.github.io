@@ -3,7 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from "remark";
 import remarkHtml from 'remark-html';
-import moment from 'moment';
+import remarkImages from 'remark-images'
+
 
 const postsDirectory = path.join(process.cwd(), 'data/posts');
 

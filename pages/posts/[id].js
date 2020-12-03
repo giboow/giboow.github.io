@@ -26,7 +26,7 @@ export async function getStaticProps({params}) {
 export default function Post(props) {
 
   const {postData : {keywords}} = props;
-  console.log(keywords)
+
   return (
     <Layout>
       <Head>
