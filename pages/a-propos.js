@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import AboutContent from "../elements/about"
+import AboutContent from "../components/pages/about"
 import Head from "next/head"
 
 const keywords = [
@@ -17,7 +17,7 @@ const keywords = [
 ]
 
 export const AboutPage = () => (
-    <Layout navActive="about" subtitle="Curriculum Vitae">
+    <Layout navActive="about" subtitle="A propos">
         <Head>
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />

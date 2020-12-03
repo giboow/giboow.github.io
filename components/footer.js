@@ -1,6 +1,10 @@
 import {Component} from 'react'
 import Link from 'next/link'
 import moment from 'moment'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faGithub, faWeixin, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 export default class Footer extends Component {
   render() {
@@ -13,25 +17,25 @@ export default class Footer extends Component {
                 <div className="columns is-mobile">
                   <div className="column">
                     <a title="Twitter" className="icon" href="https://twitter.com/giboow">
-                      <i className="fa fa-twitter"></i>
+                      <FontAwesomeIcon icon={faTwitter}  />
                     </a>
                   </div>
                   <div className="column">
                     <a title="LinkedIn" className="icon"
                        href="https://www.linkedin.com/in/pgibert/">
-                      <i className="fa fa-linkedin"></i>
+                      <FontAwesomeIcon icon={faLinkedin}  />
                     </a>
                   </div>
                   <div className="column">
                     <a title="Github" className="icon" target="_blank"
                        href="https://github.com/giboow/">
-                      <i className="fa fa-github"></i>
+                      <FontAwesomeIcon icon={faGithub}  />
                     </a>
                   </div>
                   <div className="column">
                     <Link href="/contact">
                       <a title="Contactez moi" className="icon">
-                        <i className="fa fa-weixin"></i>
+                        <FontAwesomeIcon icon={faWeixin}  />
                       </a>
                     </Link>
                   </div>

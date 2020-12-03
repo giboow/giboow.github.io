@@ -25,8 +25,9 @@ export default () => {
                 des techniques back-end et front-end.
                 J'aime faire une veille constante sur l'ecosysteme web et découvrir de nouvelles
                 technologies.
+
                 Passionné d'internet, de jeux de sociétés et de tout ce qui tourne autour de
-                l'univers geek et high tech, je vous fais partager mes passions
+                l'univers geek et high tech, je vous fais partager ma passion de l'IT
                 à travers mon blog.
               </p>
             </div>

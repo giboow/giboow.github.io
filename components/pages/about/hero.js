@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => (
+const Hero = () => (
     <section className="hero is-medium has-text-centered is-primary">
         <div className="hero-body">
             <div className="container">
@@ -9,4 +9,6 @@ export default () => (
             </div>
         </div>
     </section>
-)
+);
+
+export default Hero;

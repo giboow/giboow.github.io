@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import Navigation from './navigation'
 
+import './index.css';
 
 class Header extends Component {
 
@@ -36,37 +37,38 @@ class Header extends Component {
     const {navigation} = this.props
 
     return (
-      <nav className="navbar is-boxed">
-        <div className="navbar-brand">
-          <Link href="/">
-            <a className="navbar-item "
-               style={{
-                 fontFamily: 'Roboto',
-                 fontWeight: 'bold',
-                 fontSize: '1.5em',
-                 color: 'cadetblue'
-               }}>
-              GiBoOw
-            </a>
-          </Link>
-          <div
-            className={classnames('navbar-burger', 'burger', {'is-active': this.state.activeToggleNav})}
-            onClick={this.toggleNavMenu}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
+      <div>
+        <nav className="navbar is-boxed">
+          <div className="navbar-brand">
+            <Link href="/">
+              <a className="navbar-item "
+                 style={{
+                   fontFamily: 'Roboto',
+                   fontWeight: 'bold',
+                   fontSize: '1.5em',
+                   color: 'cadetblue'
+                 }}>
+                GiBoOw
+              </a>
+            </Link>
+            <div
+              className={classnames('navbar-burger', 'burger', {'is-active': this.state.activeToggleNav})}
+              onClick={this.toggleNavMenu}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
-        <Navigation {...navigation} className="navbar-start"/>
+          <Navigation {...navigation} className="navbar-start"/>
 
 
-
-        <Navigation {...navigation}
-                    isMobile
-                    className={classnames('navbar-end', 'navbar-menu', {'is-active': this.state.activeToggleNav})}
-        />
-      </nav>
+          <Navigation {...navigation}
+                      isMobile
+                      className={classnames('navbar-end', 'navbar-menu', {'is-active': this.state.activeToggleNav})}
+          />
+        </nav>
+      </div>
     )
   }
 }
