@@ -31,7 +31,7 @@ const IndexPage = ({edito, posts}) => (
                 <div className="columns is-multiline">
                     {posts && posts.length > 0 && posts.map((post, idx) => (
                         <div key={idx} className="column is-12">
-                            <PostItem post={post}/>
+                            <PostItem post={post} />
                         </div>
                     ))}
                 </div>

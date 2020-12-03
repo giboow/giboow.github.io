@@ -1,11 +1,14 @@
 import {Component} from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import Link from "next/link";
+
+import style from './title.scss';
 
 export default class Title extends Component {
 
     static propTypes = {
-        title: PropTypes.string.isRequired
+        title: PropTypes.string.isRequired,
     };
 
 
@@ -14,21 +17,27 @@ export default class Title extends Component {
     }
 
     render() {
-        const {title, date} = this.props;
-        const momentDate = moment(date);
-
+        const post = this.props;
         return (
-            <>
-                <section className="hero is-info">
-                    <div className="hero-body">
-                        <div className="container">
-                            <h1 className="title is-1">{title}</h1>
-                            <time datetime={moment.utc(date).format()}
-                                  className="subtitle is-4">{momentDate.format('LL')}</time>
+            <section className="hero is-secondary hero-background has-background is-blogpost">
+                {post.image && <img className="hero-background is-transparent" src={post.image}/>}
+                <div className="hero-body">
+                    <div className="container">
+                        <Link href={"/posts/" + post.id}>
+                            <a className="title">{post.title}</a>
+                        </Link>
+                        <div className="metadata">
+                            <div className="image is-24x24 is-pulled-left mr-2">
+                                <img src={"https://github.com/" + post.author + ".png?size=28"}
+                                     className="is-rounded" alt="author"/>
+                            </div>
+                            <time className="is-left" dateTime={moment.utc(post.date).format()}>
+                                {moment(post.date).format('LL')}
+                            </time>
                         </div>
                     </div>
-                </section>
-            </>
+                </div>
+            </section>
         )
     }
 

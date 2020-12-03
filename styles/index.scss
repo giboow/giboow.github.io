@@ -21,7 +21,19 @@
 
   &.is-blogpost  {
     .hero-body {
-      padding: 18rem 1.5rem 1.5rem;
+      @media (min-width: $widescreen) {
+        padding: 18rem 1.5rem 1.5rem;
+      }
+      @media (max-width: $widescreen) {
+        padding: 2rem 1.5rem 1.5rem;
+      }
+      .container {
+        .title {
+          @media (max-width: $widescreen) {
+            font-size: 1.4em;
+          }
+        }
+      }
     }
 
   }
