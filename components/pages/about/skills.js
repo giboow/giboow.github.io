@@ -3,9 +3,9 @@ import ScoreStar from '../../score/star'
 import Separator from "./utils/separator";
 
 
-export default () => {
+const Skills =() => {
   const skills = [
-    {'name': 'PHP', 'score': 5},
+    {'name': 'PHP', 'score': 4},
     {'name': 'Java/Spring Boot', 'score': 4},
     {'name': 'Android', 'score': 3},
     {'name': 'HTML5/CSS3', 'score': 4},
@@ -13,13 +13,14 @@ export default () => {
     {'name': 'Javascript', 'score': 5},
     {'name': 'NodeJS', 'score': 4},
     {'name': 'Angular', 'score': 5},
-    {'name': 'MySQL', 'score': 5},
+    {'name': 'MySQL/PostgreSQL', 'score': 4},
     {'name': 'MongoDB', 'score': 5},
-    {'name': 'Redis', 'score': 5},
-    {'name': 'Bash/Scripts', 'score': 5},
-    {'name': 'Docker', 'score': 4},
+    {'name': 'Redis', 'score': 3},
+    {'name': 'Bash/Scripts', 'score': 3},
+    {'name': 'Docker', 'score': 3},
     {'name': 'GIT', 'score': 4},
-    {'name': 'Jenkins', 'score': 4},
+    {'name': 'Jenkins', 'score': 3},
+    {'name': 'SysAdmin', 'score': 3},
   ];
 
   const chunkSize = Math.ceil(skills.length / 4);
@@ -49,3 +50,5 @@ export default () => {
     </section>
   )
 }
+
+export default Skills;

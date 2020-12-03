@@ -17,7 +17,7 @@ const keywords = [
 ]
 
 export const AboutPage = () => (
-    <Layout navActive="about" subtitle="Curriculum Vitae">
+    <Layout navActive="about" subtitle="A propos">
         <Head>
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')} />

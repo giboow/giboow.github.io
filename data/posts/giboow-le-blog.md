@@ -17,7 +17,9 @@ J'ai toujours aimé la programmation et la logique qui en découle. J'ai commenc
 mon grand frère m'a offert une calculatrice Casio graphique, depuis ce jour là j'ai découvert les bases de la
 programmation ! À 13 ans, nous avons reçu notre premier ordinateur, c'était un Apple Performa 6320, au bout d’un mois
 nous avons démonté la bête avec mon frère pour voir comment cela fonctionnait !
-J'ai ensuite continué mon évolution tranquillement avec des pages HTML statiques, des Apple script, etc. Pendant mes
+J'ai ensuite continué mon évolution tranquillement avec des pages HTML statiques, des Apple script, etc...
+
+Pendant mes
 études j'ai beaucoup travaillé sur Linux j'ai donc une bonne connaissance de ce système et de son fonctionnement, je ne
 suis cependant pas un expert (mais je me débrouille toujours 😃).
 

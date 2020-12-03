@@ -19,13 +19,14 @@ export default class Title extends Component {
     render() {
         const post = this.props;
         return (
+
             <section className="hero is-secondary hero-background has-background is-blogpost">
                 {post.image && <img className="hero-background is-transparent" src={post.image}/>}
                 <div className="hero-body">
                     <div className="container">
-                        <Link href={"/posts/" + post.id}>
-                            <a className="title">{post.title}</a>
-                        </Link>
+                        <div className="title">
+                            {post.title}
+                        </div>
                         <div className="metadata">
                             <div className="image is-24x24 is-pulled-left mr-2">
                                 <img src={"https://github.com/" + post.author + ".png?size=28"}
@@ -38,6 +39,8 @@ export default class Title extends Component {
                     </div>
                 </div>
             </section>
+
+
         )
     }
 

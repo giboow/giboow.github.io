@@ -21,8 +21,8 @@ export async function getStaticProps(context) {
     }
 }
 
-const IndexPage = ({edito, posts}) => (
-    <Layout>
+const IndexPage = ({posts}) => (
+    <Layout navActive={"accueil"}>
         <Hero></Hero>
 
         <section className="section is-fullheight">
