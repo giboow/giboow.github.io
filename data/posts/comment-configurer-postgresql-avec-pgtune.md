@@ -28,9 +28,9 @@ fait le ☕!
 
 ![PGTune capture](/static/images/post/capture-pgtune.png)
 
-Il vous reste ensuite à injecter cette nouvelle configuration dans le fichier de configuration de votre Postgres.
+Il ne vous reste plus qu'à injecter cette nouvelle configuration dans le fichier de configuration de votre Postgres.
 
-Depuis que j'ai appliqué cette configuration, je n'ai plus de problème de performance. Finalement, mes utilisateurs sont
+Depuis que j'ai appliqué la configuration par l'utilitaire, je n'ai plus de problème de performance. Finalement, les utilisateurs sont
 contents, et moi aussi 😃.
 
 Pour les fans de [Ruby](https://www.ruby-lang.org/fr/), où si cela vous amuse, vous pouvez aller consulter le code du
