@@ -1,6 +1,6 @@
 ---
 author: giboow 
-title: "PGTune, l'utilitaire qui va te faire gagner du temps" 
+title: "Comment bien configurer son serveur Postgres avec PGTune" 
 date: '2020-12-02' 
 keywords:
     - Postgresql
