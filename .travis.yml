@@ -4,7 +4,7 @@ node_js:
   - '12'
 
 deploy:
-  cleanup: true
+  cleanup: false
   provider: script
   script: "./scripts/deploy.sh"
   on:
