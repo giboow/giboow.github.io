@@ -32,6 +32,7 @@ const IndexPage = ({posts}) => (
                     {posts && posts.length > 0 && posts.map((post, idx) => (
                         <div key={idx} className="column is-12">
                             <PostItem post={post} />
+                            <hr />
                         </div>
                     ))}
                 </div>
