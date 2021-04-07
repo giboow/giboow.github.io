@@ -8,7 +8,7 @@
     "test": "npm run export",
     "dev": "cross-env NODE_ENV=development node server.js",
     "build": "next build",
-    "export": "next build && next export && echo 'giboow.fr' > ./out/CNAME && touch ./out/.nojekyll",
+    "export": "rimraf out && next build && next export && echo 'giboow.fr' > ./out/CNAME && touch ./out/.nojekyll && copy README.md ./out",
     "prestart": "npm run build",
     "start": "NODE_ENV=production node server.js",
     "predeploy": "npm run export",
@@ -44,11 +44,12 @@
     "remark-images": "^2.0.0",
     "remark-parse": "^9.0.0",
     "remark-react": "^8.0.0",
-    "rimraf": "^3.0.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.11.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "copy": "^0.3.2",
+    "rimraf": "^3.0.2"
   }
 }
