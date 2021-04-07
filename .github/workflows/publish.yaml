@@ -1,11 +1,11 @@
-name: deploy to lambda
+name: Publish to https://giboow.fr
 on:
   push:
     branches:
       - src
 jobs:
   deploy:
-    name: publish site
+    name: publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
