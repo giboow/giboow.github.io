@@ -16,13 +16,9 @@ sitemap({
         // },
     },
     sitemapStylesheet: [
-        // {
-        //     type: "text/css",
-        //     styleFile: "/test/styles.css",
-        // },
         {
             type: "text/xsl",
-            styleFile: "https://raw.githubusercontent.com/pedroborges/xml-sitemap-stylesheet/master/sitemap.xsl",
+            styleFile: "sitemap.xsl",
         },
     ],
 });
