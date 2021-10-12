@@ -7,3 +7,5 @@ yarn-error.log
 
 out/*
 _next
+
+.DS_Store

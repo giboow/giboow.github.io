@@ -6,6 +6,8 @@ keywords:
     - Video
     - Transcoder
     - SpringBoot
+    - FFMpeg
+    - Java
 image: /static/images/post/proxy-transcoder-ffmpeg/main.jpg
 --- 
 J'ai récemment commencé à travailler sur un système de caméras de surveillance et je souhaite pouvoir afficher les vidéos collectées sur des pages Web.
