@@ -8,7 +8,7 @@ sitemap({
     targetDirectory: "out/",
     sitemapFilename: "sitemap.xml",
     nextConfigPath: __dirname + "/next.config.js",
-    ignoredExtensions: ["png", "jpg", "css", "md", "ico", "webp", "xml"],
+    ignoredExtensions: ["png", "jpg", "css", "md", "ico", "webp", "xml", "svg", "xsl", "txt", "webmanifest"],
     pagesConfig: {
         // "/login": {
         //     priority: "0.5",
