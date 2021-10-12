@@ -16,13 +16,13 @@ sitemap({
         // },
     },
     sitemapStylesheet: [
-        {
-            type: "text/css",
-            styleFile: "/test/styles.css",
-        },
+        // {
+        //     type: "text/css",
+        //     styleFile: "/test/styles.css",
+        // },
         {
             type: "text/xsl",
-            styleFile: "test/test/styles.xls",
+            styleFile: "https://raw.githubusercontent.com/pedroborges/xml-sitemap-stylesheet/master/sitemap.xsl",
         },
     ],
 });
