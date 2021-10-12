@@ -1,7 +1,7 @@
 import React from 'react'
 import Marker from './utils/marker'
 
-export default () => (
+const Career = () => (
     <div>
         <div className="columns">
             <div className="column is-2 is-offset-1-desktop">
@@ -176,4 +176,6 @@ export default () => (
             </div>
         </div>
     </div>
-)
+);
+
+export default Career;

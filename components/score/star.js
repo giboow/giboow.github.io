@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-export default ({score}) => {
+const Star = ({score}) => {
     const starsIndex = Array.from(Array(5).keys()).map(item => item+1);
     return (
         <div>
@@ -22,4 +22,5 @@ export default ({score}) => {
             })}
         </div>
     )
-}
+};
+export default Star;

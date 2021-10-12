@@ -3,7 +3,7 @@ import moment from 'moment'
 
 import Marker from './utils/marker'
 
-export default () => {
+const Profil =  () => {
   const beginWork = moment(['2003', '07', '01']);
   const nbYearsOfWork = moment().diff(beginWork, 'years');
 
@@ -53,3 +53,4 @@ export default () => {
     </section>
   )
 }
+export default Profil;

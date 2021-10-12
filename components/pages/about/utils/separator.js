@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({title}) => {
+const Separator = ({title}) => {
   return (
     <div className="columns">
       <div className="column is-offset-1 is-10 has-text-centered">
@@ -10,3 +10,5 @@ export default ({title}) => {
     </div>
   )
 }
+
+export default Separator;

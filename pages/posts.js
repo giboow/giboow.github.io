@@ -2,7 +2,6 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import {getSortedPostsData} from "../services/posts";
 
-import * as style from "./post.scss";
 import LinkTitle from "../components/pages/post/linkTitle";
 
 const keywords = [
