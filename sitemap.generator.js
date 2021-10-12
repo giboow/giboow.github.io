@@ -4,11 +4,11 @@ sitemap({
     baseUrl: "https://giboow.fr",
     ignoredPaths: [],
     extraPaths: [],
-    pagesDirectory: __dirname + "/pages",
+    pagesDirectory: __dirname + "/out",
     targetDirectory: "out/",
     sitemapFilename: "sitemap.xml",
     nextConfigPath: __dirname + "/next.config.js",
-    ignoredExtensions: ["png", "jpg"],
+    ignoredExtensions: ["png", "jpg", "css", "md", "ico", "webp", "xml"],
     pagesConfig: {
         // "/login": {
         //     priority: "0.5",
