@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import Link from "next/link";
 
-import style from './title.scss';
+//import style from './title.scss';
 import Title from "./title";
 
 export default class LinkTitle extends Component {

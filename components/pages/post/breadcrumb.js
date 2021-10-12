@@ -1,4 +1,3 @@
-import * as style from './breadcrumb.scss'
 import Link from "next/link";
 
 const Breadcrumb = ({title}) => (

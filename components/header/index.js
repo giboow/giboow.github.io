@@ -6,8 +6,6 @@ import Link from 'next/link'
 
 import Navigation from './navigation'
 
-import './index.css';
-
 class Header extends Component {
 
   static defaultProps = {

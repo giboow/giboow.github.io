@@ -1,10 +1,11 @@
-const withSass = require('@zeit/next-sass')
-const withCSS = require('@zeit/next-css')
+const path = require('path')
 
 
-module.exports = withCSS(
-  withSass({
+module.exports = {
     distDir: "_next",
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
+    },
     generateBuildId: async () => {
       if (process.env.BUILD_ID) {
         return process.env.BUILD_ID;
@@ -22,5 +23,4 @@ module.exports = withCSS(
 
       return config
     }
-  })
-);
+  };

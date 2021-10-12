@@ -2,7 +2,7 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
-import style from './title.scss';
+//import style from './title.scss';
 
 export default class Title extends Component {
 

@@ -1,12 +1,12 @@
-import style from './item.scss';
+import style from '../../../../styles/post-item.module.scss';
 import React from "react";
 import * as classnames from "classnames";
 import LinkTitle from "../../../pages/post/linkTitle";
 
 const PostListItem = ({post}) => (
-    <article className={classnames(style.post)}>
+    <article>
         <LinkTitle {...post} />
-        <div className="content mt-4"
+        <div className={classnames(style.post, "content mt-4")}
              dangerouslySetInnerHTML={{
                  __html: post.contentHtml
              }}/>
