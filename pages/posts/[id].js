@@ -25,14 +25,16 @@ export async function getStaticProps({params}) {
 
 export default function Post(props) {
 
-  const {postData : {keywords}} = props;
+  const {postData : {keywords, title}} = props;
 
   return (
-    <Layout>
+    <Layout title={title}>
       <Head>
         {keywords && (
           <meta name="keywords" content={keywords.join(',')} />
         )}
+        <meta name="title" content={title}/>
+        {/*<meta name="description" content=""/>*/}
       </Head>
       <PostContent {...props} />
     </Layout>

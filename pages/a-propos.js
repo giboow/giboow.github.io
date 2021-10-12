@@ -17,14 +17,23 @@ const keywords = [
 ]
 
 export const AboutPage = () => (
-    <Layout navActive="about" subtitle="A propos">
+    <>
         <Head>
+            <meta name="title" content="Site personnel de Philippe Gibert"/>
+            <meta name="description" content="Développeur Web depuis plus de 10 ans, j'ai une bonne connaissance des techniques back-end et front-end.
+                                J'aime faire une veille constante sur l'ecosysteme web et découvrir de nouvelles technologies.
+                                Passionné d'internet, de jeux de sociétés et de tout ce qui tourne autour de l'univers geek et high tech, je vous fais partager mes passions
+                                à travers mon blog."/>
             {keywords && (
-                <meta name="keywords" content={keywords.join(',')} />
+                <meta name="keywords" content={keywords.join(',')}/>
             )}
         </Head>
-        <AboutContent />
-    </Layout>
+
+        <Layout navActive="about" subtitle="A propos">
+
+            <AboutContent/>
+        </Layout>
+    </>
 )
 
 export default AboutPage

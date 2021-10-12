@@ -19,10 +19,13 @@ class Layout extends Component {
 
   static defaultProps = {
     navActive: null,
+    title: "Giboow, Philippe Gibert, Développeur Web" +
+        " FullStack, Rennes, Bretagne"
   }
 
   static propTypes = {
-    navActive: PropTypes.string, // navigation config
+    navActive: PropTypes.string,
+    title: PropTypes.string// navigation config
   }
 
   /**
@@ -52,14 +55,12 @@ class Layout extends Component {
       navigation: {activeItem: navActive}
     }
 
-    const mainTitle = "Giboow, Philippe Gibert, Développeur Web" +
-      " FullStack, Rennes, Bretagne "
 
     return (
       <div>
         <NProgess/>
         <Head>
-          <title>{mainTitle}{title ? " - " + title : null}</title>
+          <title>{title}</title>
         </Head>
         <Header {...headerProps} />
         {children}

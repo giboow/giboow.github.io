@@ -18,12 +18,6 @@ export default class MyDocument extends Document {
               rel="stylesheet"/>
         <link rel="shortcut icon" href="/static/images/icons/favicon.ico" />
 
-        <meta name="title" content="Site personnel de Philippe Gibert"/>
-        <meta name="description" content="Développeur Web depuis plus de 10 ans, j'ai une bonne connaissance des techniques back-end et front-end.
-                            J'aime faire une veille constante sur l'ecosysteme web et découvrir de nouvelles technologies.
-                            Passionné d'internet, de jeux de sociétés et de tout ce qui tourne autour de l'univers geek et high tech, je vous fais partager mes passions
-                            à travers mon blog."/>
-
       </Head>
       <body className="custom_class">
       {this.props.customValue}

@@ -24,6 +24,8 @@ const PostPage = ({posts}) => (
             {keywords && (
                 <meta name="keywords" content={keywords.join(',')}/>
             )}
+            <meta name="title" content="Les derniers posts de Philippe Gibert"/>
+            <meta name="description" content="Ici vous trouverez mes derniers posts!"/>
         </Head>
         <section className="section is-fullheight">
             <div className="container">
