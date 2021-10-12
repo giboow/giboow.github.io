@@ -36,7 +36,7 @@ class Header extends Component {
 
     return (
       <div>
-        <nav className="navbar is-boxed">
+        <nav className="navbar is-boxed is-fixed-top">
           <div className="navbar-brand">
             <Link href="/">
               <a className="navbar-item "

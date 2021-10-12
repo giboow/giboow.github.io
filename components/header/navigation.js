@@ -33,7 +33,7 @@ class Navigation extends Component {
             'navbar-item': true,
             'is-tab': true,
             'is-hidden-mobile': !isMobile,
-            'is-hidden-tablet': isMobile
+            'is-hidden-tablet': isMobile,
         }
 
 
