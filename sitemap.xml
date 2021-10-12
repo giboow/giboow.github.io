@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://raw.githubusercontent.com/pedroborges/xml-sitemap-stylesheet/master/sitemap.xsl" type="text/xsl" ?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="sitemap.xsl" type="text/xsl" ?>
 
       <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
@@ -53,6 +53,11 @@
 
 	<url>
 		<loc>https://giboow.fr/robots</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/sitemap</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
 </urlset>
