@@ -13,6 +13,11 @@
 	</url>
 
 	<url>
+		<loc>https://giboow.fr</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
 		<loc>https://giboow.fr/a-propos</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
@@ -23,12 +28,32 @@
 	</url>
 
 	<url>
-		<loc>https://giboow.fr/posts/[id]</loc>
+		<loc>https://giboow.fr/posts/android-emulator-apple-silicon</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/posts/comment-configurer-postgresql-avec-pgtune</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/posts/comment-transcoder-une-video-avec-springboot-et-ffmpeg</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/posts/giboow-le-blog</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts</loc>
+		<lastmod>2021-10-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/robots</loc>
 		<lastmod>2021-10-12</lastmod>
 	</url>
 </urlset>
