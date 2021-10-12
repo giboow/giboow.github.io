@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/test/styles.css" type="text/css" ?>
-<?xml-stylesheet href="test/test/styles.xls" type="text/xsl" ?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="https://raw.githubusercontent.com/pedroborges/xml-sitemap-stylesheet/master/sitemap.xsl" type="text/xsl" ?>
 
       <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
