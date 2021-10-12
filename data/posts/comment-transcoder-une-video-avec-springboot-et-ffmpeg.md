@@ -34,15 +34,19 @@ Enfin, il me suffit d'utiliser FFMPEG dans mon contrôleur pour envoyer le flux 
 Voici la solution finale et comment relayer un flux vidéo provenant d'une caméra HikVision afin que le format soit utilisable par une page HTML.
 
 ```java
+import com.github.kokorin.jaffree.StreamType;
+import com.github.kokorin.jaffree.ffmpeg.FFmpeg;
+import com.github.kokorin.jaffree.ffmpeg.PipeOutput;
+
 @RestController
 @RequestMapping("/video")
 @Log4j2
 public class VideoController {
-		@GetMapping(value = "/live.mp4")
+    @GetMapping(value = "/live.mp4")
     @ResponseBody
     public ResponseEntity<StreamingResponseBody> livestream(@PathVariable("id") Long tipperId) throws Exception {
 
-				String rtspUrl = "rtsp://user:passwd@192.168.1.200:554/ISAPI/Streaming/channels/101/live";
+        String rtspUrl = "rtsp://user:passwd@192.168.1.200:554/ISAPI/Streaming/channels/101/live";
 
         return ResponseEntity.ok()
                 .contentType(MediaType.APPLICATION_OCTET_STREAM)
