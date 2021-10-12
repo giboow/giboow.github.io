@@ -24,5 +24,5 @@ jobs:
           folder: out # The folder the action should deploy.
       - name: Ping Sitemap
         uses: atymic/sitemap-ping-action@master
-          with:
-            sitemap-url: http://giboow.fr/sitemap.xml
+        with:
+          sitemap-url: http://giboow.fr/sitemap.xml
