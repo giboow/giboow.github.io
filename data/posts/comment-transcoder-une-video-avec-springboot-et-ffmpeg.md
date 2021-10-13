@@ -103,3 +103,5 @@ Et voici le résultat :
 
 Facile non?
 
+
+[Retrouvez l'article anglais sur dev.to](https://dev.to/giboow/how-to-build-a-video-transcoder-with-springboot-and-ffmpeg-n7p)
