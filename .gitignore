@@ -4,7 +4,8 @@
 node_modules
 .next
 yarn-error.log
-
+cache
+build
 out/*
 _next
 
