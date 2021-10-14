@@ -40,7 +40,7 @@
     "react-parallax": "^3.1.2",
     "react-truncate": "^2.4.0",
     "remark": "^13.0.0",
-    "remark-html": "^13.0.1",
+    "remark-html": "^13.0.2",
     "remark-images": "^2.0.0",
     "remark-parse": "^9.0.0",
     "remark-react": "^8.0.0",
