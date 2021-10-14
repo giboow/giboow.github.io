@@ -2,7 +2,7 @@ name: Publish to https://giboow.fr
 on:
   push:
     branches:
-      - src
+      - main
 jobs:
   deploy:
     name: publish
@@ -20,7 +20,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: master # The branch the action should deploy to.
+          branch: out # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
       - name: Ping Sitemap
         uses: atymic/sitemap-ping-action@master
