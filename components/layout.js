@@ -6,7 +6,7 @@ import Footer from './footer'
 import NProgess from "./nprogress";
 
 import Analytics from '../services/google-analytics'
-import Router from 'next-routes'
+import Router from 'next/router'
 
 
 import 'moment';
