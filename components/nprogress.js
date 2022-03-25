@@ -1,36 +1,24 @@
-import {Component} from 'react'
-import Head from 'next/head'
 import Router from 'next/router'
 import NProgressLib from 'nprogress'
+import {useEffect} from "react";
+
+export default function NProgress() {
 
 
-class NProgess extends Component
-{
+        useEffect(() => {
+            Router.onRouteChangeStart = (url) => {
+                NProgressLib.start()
+            }
 
-    constructor(props) {
-        super(props)
+            Router.onAppUpdated = (nextRoute) => {
+                NProgressLib.start()
+            }
 
-        Router.onRouteChangeStart = (url) => {
-            NProgressLib.start()
-        }
-
-        Router.onAppUpdated = (nextRoute) => {
-            NProgressLib.start()
-        }
-
-        Router.onRouteChangeComplete = () => NProgressLib.done()
-        Router.onRouteChangeError = () => NProgressLib.done()
-    }
-
-    render() {
+            Router.events.on('routeChangeComplete', () => NProgressLib.done());
+            Router.events.on('routeChangeComplete', () =>   NProgressLib.done());
+        });
         return(
-            <div>
-                <Head>
-                    <link rel='stylesheet' type='text/css' href='/static/css/nprogress.css' />
-                </Head>
-            </div>
+            <></>
         )
-    }
 }
 
-export default NProgess
