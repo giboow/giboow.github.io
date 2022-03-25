@@ -3,9 +3,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from "remark";
 import remarkHtml from 'remark-html';
-import remarkImages from 'remark-images'
+import remarkPrism from 'remark-prism';
 
 
+remarkPrism()
 const postsDirectory = path.join(process.cwd(), 'data/posts');
 
 /**
@@ -42,7 +43,8 @@ export async function getSortedPostsData() {
 
             // Get content html
             const processedContent = await remark()
-                .use(remarkHtml)
+                .use(remarkPrism)
+                .use(remarkHtml,  { sanitize: false })
                 .process(matterResult.content);
             const contentHtml = processedContent.toString()
 
@@ -78,7 +80,8 @@ export async function getPostData(id) {
 
     // Get content html
     const processedContent = await remark()
-        .use(remarkHtml)
+        .use(remarkPrism)
+        .use(remarkHtml,  { sanitize: false })
         .process(matterResult.content);
     const contentHtml = processedContent.toString()
 
