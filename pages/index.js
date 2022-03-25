@@ -38,9 +38,9 @@ const IndexPage = ({posts}) => (
                     <h2 className="title is-2">Derniers posts</h2>
                     <div className="columns is-multiline">
                         {posts && posts.length > 0 && posts.map((post, idx) => (
-                            <div key={idx} className="column is-12">
-                                <PostItem post={post}/>
-                                <hr/>
+                            <div key={idx} className="column is-4">
+
+                                    <PostItem post={post}/>
                             </div>
                         ))}
                     </div>

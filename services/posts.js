@@ -5,7 +5,6 @@ import remark from "remark";
 import remarkHtml from 'remark-html';
 import remarkPrism from 'remark-prism';
 
-
 remarkPrism()
 const postsDirectory = path.join(process.cwd(), 'data/posts');
 
@@ -33,28 +32,7 @@ export async function getSortedPostsData() {
             // Remove ".md" from file name to get id
             const id = fileName.replace(/\.md$/, '')
 
-            // Read markdown file as string
-            const fullPath = path.join(postsDirectory, fileName)
-            const fileContents = fs.readFileSync(fullPath, 'utf8')
-
-            // Use gray-matter to parse the post metadata section
-            const matterResult = matter(fileContents)
-
-
-            // Get content html
-            const processedContent = await remark()
-                .use(remarkPrism)
-                .use(remarkHtml,  { sanitize: false })
-                .process(matterResult.content);
-            const contentHtml = processedContent.toString()
-
-
-            // Combine the data with the id
-            return {
-                id,
-                ...matterResult.data,
-                contentHtml
-            }
+            return getPostData(id);
         })
     );
     // Sort posts by date
@@ -70,6 +48,12 @@ export async function getSortedPostsData() {
 
 }
 
+function readingTime(text){
+    const wpm = 225;
+    const words = text.trim().split(/\s+/).length;
+   return Math.ceil(words / wpm);
+}
+
 
 export async function getPostData(id) {
     const fullPath = path.join(postsDirectory, `${id}.md`)
@@ -79,17 +63,17 @@ export async function getPostData(id) {
     const matterResult = matter(fileContents);
 
     // Get content html
-    const processedContent = await remark()
+    const contentHtml = (await remark()
         .use(remarkPrism)
         .use(remarkHtml,  { sanitize: false })
-        .process(matterResult.content);
-    const contentHtml = processedContent.toString()
-
+        .process(matterResult.content)).toString();
 
     // Combine the data with the id
     return {
         id,
         contentHtml,
-        ...matterResult.data
+        ...matterResult.data,
+        readingTime: readingTime(matterResult.content)
     }
 }
+

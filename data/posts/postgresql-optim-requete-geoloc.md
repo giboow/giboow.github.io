@@ -10,6 +10,7 @@ keywords:
 - Optimisation
 - SQL
 image: /static/images/post/postgres-geoloc-optim.png
+summary: "Récemment j’ai voulu créer une petite application mobile qui permet de rechercher les boîtes aux lettres qui sont autour de la géolocalisation utilisateur. D’autres apps existent, mais leurs performances n’étaient pas vraiment au rendez-vous, alors j’ai voulu tenter de trouver des solutions"
 ---
 Récemment j’ai voulu créer une petite application mobile qui permet de rechercher les boîtes aux lettres qui sont autour de la géolocalisation utilisateur. D’autres apps existent, mais leurs performances n’étaient pas vraiment au rendez-vous, alors j’ai voulu tenter de trouver des solutions!
 

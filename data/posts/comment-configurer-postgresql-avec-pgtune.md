@@ -7,6 +7,7 @@ keywords:
     - Tunning
     - Performances 
 image: /static/images/post/pgtune.png
+summary: "Présentation d'un outils qui permet de configurer simplement un serveur PostgreSQL"
 --- 
 Récemment, j'ai dû mettre le nez dans les serveurs de notre application, car nous avions des problèmes de performances
 et de stabilité.

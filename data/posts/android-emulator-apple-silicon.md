@@ -8,6 +8,7 @@ keywords:
     - Apple Silicon
     - AppleM1
 image: /static/images/post/android-apple.png
+summary: "J'ai récemment craqué pour le nouveau MacBook Pro M1! Depuis 1 semaine que je l'apprivoise, toutes les applications que j'utilise fonctionnent (merci Rosetta2!). Mon seul problème, en tant que developpeur mobile, est que l'Emulateur Android ne fonctionne pas"
 --- 
 Bonsoir à tous!
 

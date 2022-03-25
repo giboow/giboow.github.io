@@ -7,7 +7,8 @@ keywords:
     - TheBeginning
     - Objectifs
 image: /static/images/post/hello-image.webp
---- 
+summary: "Je m'appelle Philippe, j'ai 36 ans, j'ai une petite famille ainsi qu'un chat et deux poules! Je suis développeur d'application"
+---
 
 Je m'appelle Philippe, j'ai 36 ans, j'ai une petite famille ainsi qu'un chat et deux poules!
 Je suis développeur d'application depuis une bonne quinzaine d'années. Le développement et la technologie occupent donc

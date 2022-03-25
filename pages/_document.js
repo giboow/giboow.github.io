@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
       <Html className="has-navbar-fixed-top">
       <Head>
         <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-dracula.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto"

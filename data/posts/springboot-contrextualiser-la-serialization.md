@@ -9,6 +9,7 @@ keywords:
     - Jackson
     - Filter
 image: /static/images/post/tyler-nix-WVl1N2C2zEA-unsplash.jpg
+summary: "À chaque fois que j’ai développé une API, je me suis confronté au même problème : comment filtrer les données"
 ---
 
 À chaque fois que j’ai développé une API, je me suis confronté au même problème : comment filtrer les données en fonction de mes appels API.

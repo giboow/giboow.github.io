@@ -9,6 +9,7 @@ keywords:
     - FFMpeg
     - Java
 image: /static/images/post/proxy-transcoder-ffmpeg/main.jpg
+summary: "J'ai récemment commencé à travailler sur un système de caméras de surveillance et je souhaite pouvoir afficher les vidéos collectées sur des pages Web. À première vue, cela semblait très facile..."
 --- 
 J'ai récemment commencé à travailler sur un système de caméras de surveillance et je souhaite pouvoir afficher les vidéos collectées sur des pages Web.
 À première vue, cela semblait très facile, mais je me suis vite rendu compte que je devais me creuser la tête!
