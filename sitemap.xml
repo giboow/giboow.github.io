@@ -8,51 +8,56 @@
       
 	<url>
 		<loc>https://giboow.fr/404</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/a-propos</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/index</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts/android-emulator-apple-silicon</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts/comment-configurer-postgresql-avec-pgtune</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts/comment-transcoder-une-video-avec-springboot-et-ffmpeg</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts/giboow-le-blog</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
+	</url>
+
+	<url>
+		<loc>https://giboow.fr/posts/postgresql-optim-requete-geoloc</loc>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts/springboot-contrextualiser-la-serialization</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 
 	<url>
 		<loc>https://giboow.fr/posts</loc>
-		<lastmod>2022-02-28</lastmod>
+		<lastmod>2022-03-25</lastmod>
 	</url>
 </urlset>
