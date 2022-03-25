@@ -120,9 +120,10 @@ const Career = () => (
                         </li>
                         <li>
                             Recherche et développement sur des technologies Java
-                            <li>Scala</li>
-                            <li>Groovy</li>
-
+                            <ul>
+                                <li>Scala</li>
+                                <li>Groovy</li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
