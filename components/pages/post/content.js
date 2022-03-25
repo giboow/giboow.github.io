@@ -10,9 +10,7 @@ export default class Content extends Component {
     render() {
         const {contentHtml} = this.props;
         return (
-            <section className="section">
                 <div className="content" dangerouslySetInnerHTML={{__html: contentHtml}}/>
-            </section>
         );
     }
 }

@@ -29,20 +29,22 @@ const PostListItem = ({post}) => (
             <figure className="postItem__image image is-16by9">
                 <img className="hero-background is-transparent" src={post.image}/>
             </figure>
-            <Link href="/">
+            <Link href={"/posts/" + post.id}>
                 <a className="postItem__titleLink is-flex is-flex-direction-column is-flex-grow-1 is-primary has-text-black">
                     {post.title}
                 </a>
             </Link>
             <div className="buttons my-5">
-                <button className="button is-primary is-small is-block has-icons-right">
+                <Link href={"/posts/" + post.id}>
+                    <a className="button is-primary is-small is-block has-icons-right">
                     <span>
                     Voir plus
                     </span>
-                    <span className="icon is-small">
-                    <i className="fa fa-chevron-right"></i>
+                        <span className="icon is-small">
+                        <i className="fa fa-chevron-right"></i>
                     </span>
-                </button>
+                    </a>
+                </Link>
             </div>
         </article>
     </div>
